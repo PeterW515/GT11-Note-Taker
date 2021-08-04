@@ -6,7 +6,7 @@ module.exports = (app) => {
         res.sendFile(path.join(__dirname, '../public/notes.html'));
     });
 
-    //this returns index html when any unknown api is hit
+    //this returns index html when any unknown endpoint is hit
     app.get('*', (req, res) => {
         res.sendFile(path.join(__dirname, '../public/index.html'));
     });
