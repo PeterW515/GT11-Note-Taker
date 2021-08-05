@@ -3,6 +3,14 @@
   [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
   This Express app saves and stores notes in JSON format. These notes can be updated through an HTML user interface. Notes can be added or deleted and persist even when the page is closed.
+  
+  ![image](https://user-images.githubusercontent.com/78565748/128271464-7d689d8c-92ef-4753-a087-6b092484170c.png)
+
+  
+  ![image](https://user-images.githubusercontent.com/78565748/128271443-d9f2e37d-6f74-431b-8b3f-59f8e6131395.png)
+  
+  Here is a link to the deployed app: https://peter-gt11-note-taker.herokuapp.com/
+
 
   ---
 
