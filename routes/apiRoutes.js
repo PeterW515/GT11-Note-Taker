@@ -3,14 +3,16 @@ const fs = require('fs');
 const path = require('path');
 const uuid = require('uuid');
 
-
+//add get post and delete apis
 module.exports = (app) => {
+    //returns notes
     app.get('/api/notes', (req, res) => {
         const db = fs.readFileSync(path.join(__dirname, '../db/db.json'));
         let database = JSON.parse(db);
         res.json(database);
     });
 
+    //adds new note
     app.post('/api/notes', (req, res) => {
         const dbFile = fs.readFileSync(path.join(__dirname, '../db/db.json'));
         let database = JSON.parse(dbFile);
@@ -28,6 +30,7 @@ module.exports = (app) => {
 
     });
 
+    //deletes note
     app.delete('/api/notes/:id', (req,res)=>{
         const dbFile = fs.readFileSync(path.join(__dirname, '../db/db.json'));
         let database = JSON.parse(dbFile);
